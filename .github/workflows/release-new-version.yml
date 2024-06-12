@@ -87,11 +87,6 @@ jobs:
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.REPO_PAT }}
 
-      - run: poetry build
-      - run: poetry publish -u __token__ -p $PYPI_TOKEN
-        env:
-          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-
       - name: Get latest git tag
         id: tag
         run: echo "tag=$( git describe --tags --abbrev=0 )" >> $GITHUB_OUTPUT
