@@ -21,4 +21,5 @@ class Spam:
         self.n = n
 
     def spam(self) -> None:
+        """Spam n times."""
         print(" ".join(["SPAM"] * self.n))

@@ -25,6 +25,8 @@ SPAM SPAM SPAM SPAM SPAM
 
 
 #### spam()
+Spam n times.
+
 
 * **Return type**
 
